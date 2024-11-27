@@ -1,0 +1,10 @@
+[package]
+name = "mirosender"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15"
+dotenvy = "0.15"
+lettre = "0.10"
+lettre_email = "0.9"

@@ -1,0 +1,12 @@
+/home/tomek/Desktop/mirosender/mirosender/target/debug/deps/libbase64-5e496891008ef557.rmeta: /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/lib.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/chunked_encoder.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/display.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/tables.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/write/mod.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/write/encoder.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/encode.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/decode.rs
+
+/home/tomek/Desktop/mirosender/mirosender/target/debug/deps/base64-5e496891008ef557.d: /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/lib.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/chunked_encoder.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/display.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/tables.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/write/mod.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/write/encoder.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/encode.rs /home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/decode.rs
+
+/home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/lib.rs:
+/home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/chunked_encoder.rs:
+/home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/display.rs:
+/home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/tables.rs:
+/home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/write/mod.rs:
+/home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/write/encoder.rs:
+/home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/encode.rs:
+/home/tomek/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.10.1/src/decode.rs:
