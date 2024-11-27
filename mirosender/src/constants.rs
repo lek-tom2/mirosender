@@ -1,4 +1,4 @@
-pub const TEACHER_EMAIL: &str = "miroslawmosciki@gmai.com";
+pub const TEACHER_EMAIL: &str = "jakubkulik20@gmail.com";
 pub const EMAIL_CSS_TEMPLATE: &str = r#"
     body, html {
         margin: 0;

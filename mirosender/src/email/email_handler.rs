@@ -1,7 +1,7 @@
 use std::fs;
 
 use lettre::{
-    message::{self, MultiPart, SinglePart},
+    message::{self, header::ContentType, Attachment, MultiPart, SinglePart},
     transport::smtp::authentication::Credentials,
     SmtpTransport, Transport,
 };
@@ -48,16 +48,27 @@ impl EmailHandler {
             }
         };
 
+        let att = match &email_data.attachment {
+            Some(attachement) => attachement,
+            None => return Err(EmailError::AttachmentNotFound),
+        };
+
+        let content = std::fs::read(&att).unwrap();
+        let content_type = ContentType::parse("text/plain").unwrap();
+
+        let attachment = Attachment::new(att.to_string()).body(content, content_type);
+
         let email = lettre::Message::builder()
             .from(format!("Student <{}>", email_data.sender).parse().unwrap())
             .to(format!("Miroslaw Moscicki <{}>", TEACHER_EMAIL)
                 .parse()
                 .unwrap())
             .subject(email_data.topic.clone())
-            .multipart(
+            .multipart(MultiPart::mixed().singlepart(attachment).multipart(
                 MultiPart::alternative().singlepart(SinglePart::html(email_body.to_string())),
-            )
+            ))
             .unwrap();
+
         let creds = Credentials::new(email_data.sender.clone(), email_data.password.clone());
         let mailer = SmtpTransport::relay(&email_data.smtp_server)
             .map_err(|_| EmailError::SenderEmailNotFound)?
@@ -66,7 +77,10 @@ impl EmailHandler {
 
         match mailer.send(&email) {
             Ok(_) => Ok(String::from("Email sent Successfully")),
-            Err(_) => Err(EmailError::UnexpectedError),
+            Err(e) => {
+                println!("Error that is kinda known {}", e);
+                Err(EmailError::UnexpectedError)
+            }
         }
     }
 }
